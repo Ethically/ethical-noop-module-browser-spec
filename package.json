@@ -1,0 +1,27 @@
+{
+  "name": "ethical-noop-module-browser-spec",
+  "version": "0.0.0",
+  "description": "Test mock node module with \"browser\" spec remapping for the Ethical framework.",
+  "browser": {
+    "ethical-noop-module-node": "ethical-noop-module-browser",
+    "ethical-noop-module-one": "./browser.js",
+    "./remap.js": "ethical-noop-module-two",
+    "./node/file.js": "./browser/file.js",
+    "./noop.js": false
+  },
+  "main": "./index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethically/ethical-noop-module-browser-spec.git"
+  },
+  "author": "m-a-r-c-e-l-i-n-o <me@marceli.no>",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "ethical-noop-module-browser": "0.0.1",
+    "ethical-noop-module-files": "0.0.1",
+    "ethical-noop-module-node": "0.0.1",
+    "ethical-noop-module-one": "0.0.0"
+  }
+}
